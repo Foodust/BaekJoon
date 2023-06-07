@@ -2,7 +2,6 @@
 #include <vector>
 #include <map>
 #include <sstream>
-#include <iostream>
 using namespace std;
 
 vector<string> solution(vector<string> record) {
@@ -21,13 +20,9 @@ vector<string> solution(vector<string> record) {
             asd.push_back({ id,1 });
         }
         else if (doing == "Leave")
-        {
             asd.push_back({ id,0 });
-        }
         else if (doing == "Change")
-        {
             user[id] = name;
-        }
     }
     for (auto a : asd)
     {
